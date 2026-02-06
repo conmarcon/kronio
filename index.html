@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Σπήλαιο Τράπεζας (Κρόνιο)</title>
+  <style>
+    :root {
+      --primary: #2c5f5d;
+      --secondary: #f4f1de;
+      --accent: #e07a5f;
+      --text: #1f2933;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--secondary);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(180deg, #2c5f5d, #1f3f3e);
+      color: #fff;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+    }
+
+    header p {
+      margin: 0.4rem 0 0;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .lang {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.7rem;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .lang button {
+      border: none;
+      background: #eee;
+      padding: 0.4rem 0.7rem;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.85rem;
+    }
+
+    .lang button.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    main {
+      padding: 1rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      background: #fff;
+      margin-bottom: 1rem;
+      padding: 1rem 1.1rem;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    }
+
+    section h2 {
+      margin-top: 0;
+      font-size: 1.15rem;
+      color: var(--primary);
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      padding-left: 1.1rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #666;
+      padding: 1.2rem 0 1.5rem;
+    }
+
+    [data-lang] { display: none; }
+    [data-lang].active { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Σπήλαιο Τράπεζας</h1>
+  <p>Κρόνιο Σπήλαιο – Οροπέδιο Λασιθίου</p>
+</header>
+
+<div class="lang">
+  <button class="active" onclick="setLang('el', this)">🇬🇷</button>
+  <button onclick="setLang('en', this)">🇬🇧</button>
+  <button onclick="setLang('de', this)">🇩🇪</button>
+  <button onclick="setLang('fr', this)">🇫🇷</button>
+</div>
+
+<main>
+
+<!-- Ελληνικά -->
+<div data-lang="el" class="active">
+  <section>
+    <h2>📘 Ιστορία & Περιγραφή</h2>
+    <p>Το Σπήλαιο Τράπεζας, γνωστό και ως Κρόνιο Σπήλαιο, βρίσκεται ανάμεσα στα χωριά Μαρμακέτο και Τζερμιάδο του Οροπεδίου Λασιθίου, σε υψόμετρο περίπου 860 μέτρων.</p>
+    <p>Ένα ανηφορικό καλντερίμι με σκαλοπάτια οδηγεί στο σπήλαιο μετά από περίπου 5 λεπτά ανάβασης. Η είσοδος είναι διακριτική, αλλά η θέα του Οροπεδίου είναι μαγευτική.</p>
+  </section>
+
+  <section>
+    <h2>🏺 Αρχαιολογικά Ευρήματα</h2>
+    <p>Στο σπήλαιο βρέθηκαν ίχνη κατοίκησης από τη Νεολιθική εποχή. Αρχικά χρησιμοποιήθηκε ως κατοικία και αργότερα ως χώρος ταφής και λατρείας.</p>
+    <p>Οι ανασκαφές αποκάλυψαν ευρήματα από τη Νεολιθική έως τη Βυζαντινή περίοδο, όπως φύλλα χρυσού, ειδώλια από φαγεντιανή και ελεφαντόδοντο, καθώς και αιγυπτιακούς σκαραβαίους της 11ης Δυναστείας.</p>
+  </section>
+
+  <section>
+    <h2>⚡ Μύθος του Δία</h2>
+    <p>Το Κρόνιο συνδέεται με τον μύθο της γέννησης του Δία και τον Κρόνο, που κατάπινε τα παιδιά του για να μη χάσει την κυριαρχία του.</p>
+    <p>Η Ρέα φυγάδευσε τον Δία στο Δικταίο Άντρο (Σπήλαιο Ψυχρού) για να τον σώσει.</p>
+  </section>
+
+  <section>
+    <h2>ℹ️ Πληροφορίες Επίσκεψης</h2>
+    <ul>
+      <li>🚶 Χρόνος ανάβασης: ~5 λεπτά</li>
+      <li>🪨 Ανηφορικό καλντερίμι με σκαλοπάτια</li>
+      <li>👟 Κατάλληλο υπόδημα</li>
+      <li>⚠️ Προσοχή σε χαμηλή οροφή και ολισθηρά σημεία</li>
+    </ul>
+  </section>
+</div>
+
+<!-- Αγγλικά -->
+<div data-lang="en">
+  <section>
+    <h2>📘 History & Description</h2>
+    <p>The Trapeza Cave, also known as the Kronio Cave, lies between the villages Marmaketo and Tzermiado on the Lasithi Plateau, at an altitude of approximately 860 meters.</p>
+    <p>A steep cobbled path with steps leads to the cave in about 5 minutes. The entrance is discreet, but the panoramic view of the plateau is breathtaking.</p>
+  </section>
+
+  <section>
+    <h2>🏺 Archaeological Findings</h2>
+    <p>Evidence of habitation dates back to the Neolithic period. Initially used as a dwelling, the cave was later a burial and worship site.</p>
+    <p>Excavations revealed findings from the Neolithic to Byzantine periods, including gold leaves, terracotta and ivory figurines, and Egyptian scarabs from the 11th Dynasty.</p>
+  </section>
+
+  <section>
+    <h2>⚡ Myth of Zeus</h2>
+    <p>The Kronio Cave, along with the Dictaean Cave, is connected with the birth of Zeus. Cronus swallowed his children to prevent the prophecy of being overthrown.</p>
+    <p>Rhea hid Zeus in the Dictaean Cave (Psychro Cave) to save him from Cronus.</p>
+  </section>
+
+  <section>
+    <h2>ℹ️ Visiting Info</h2>
+    <ul>
+      <li>🚶 Climbing time: ~5 minutes</li>
+      <li>🪨 Steep cobbled path with steps</li>
+      <li>👟 Suitable footwear recommended</li>
+      <li>⚠️ Watch out for low ceilings and slippery areas</li>
+    </ul>
+  </section>
+</div>
+
+<!-- Γερμανικά -->
+<div data-lang="de">
+  <section>
+    <h2>📘 Geschichte & Beschreibung</h2>
+    <p>Die Trapeza-Höhle, auch bekannt als Kronio-Höhle, liegt zwischen den Dörfern Marmaketo und Tzermiado auf dem Lasithi-Plateau in einer Höhe von etwa 860 Metern.</p>
+    <p>Ein steiler gepflasterter Pfad mit Stufen führt in ca. 5 Minuten zur Höhle. Der Eingang ist unauffällig, aber die Aussicht auf das Plateau ist beeindruckend.</p>
+  </section>
+
+  <section>
+    <h2>🏺 Archäologische Funde</h2>
+    <p>Die Höhle wurde bereits in der Jungsteinzeit bewohnt. Zunächst als Wohnstätte genutzt, diente sie später als Grab- und Kultstätte.</p>
+    <p>Ausgrabungen brachten Funde von der Jungsteinzeit bis zur byzantinischen Zeit zu Tage, darunter Goldblätter, Ton- und Elfenbeinstatuetten sowie ägyptische Skarabäen der 11. Dynastie.</p>
+  </section>
+
+  <section>
+    <h2>⚡ Mythos des Zeus</h2>
+    <p>Die Kronio-Höhle steht zusammen mit der Dictaean-Höhle im Zusammenhang mit der Geburt des Zeus. Kronos verschlang seine Kinder, um die Prophezeiung zu verhindern.</p>
+    <p>Rhea versteckte Zeus in der Dictaean-Höhle (Psychro-Höhle), um ihn vor Kronos zu retten.</p>
+  </section>
+
+  <section>
+    <h2>ℹ️ Besuchsinformationen</h2>
+    <ul>
+      <li>🚶 Aufstiegszeit: ca. 5 Minuten</li>
+      <li>🪨 Steiler gepflasterter Pfad mit Stufen</li>
+      <li>👟 Geeignetes Schuhwerk empfohlen</li>
+      <li>⚠️ Achten Sie auf niedrige Decken und rutschige Stellen</li>
+    </ul>
+  </section>
+</div>
+
+<!-- Γαλλικά -->
+<div data-lang="fr">
+  <section>
+    <h2>📘 Histoire & Description</h2>
+    <p>La grotte de Trapeza, également connue sous le nom de grotte Kronio, se trouve entre les villages de Marmaketo et Tzermiado sur le plateau de Lasithi, à environ 860 mètres d'altitude.</p>
+    <p>Un chemin pavé en pente avec des marches mène à la grotte en environ 5 minutes. L'entrée est discrète, mais la vue panoramique sur le plateau est magnifique.</p>
+  </section>
+
+  <section>
+    <h2>🏺 Découvertes Archéologiques</h2>
+    <p>Des traces d'habitation remontent à la période néolithique. Initialement utilisée comme lieu de résidence, la grotte servait plus tard de lieu de sépulture et de culte.</p>
+    <p>Les fouilles ont révélé des découvertes de la période néolithique jusqu'à la période byzantine, telles que des feuilles d'or, des figurines en faïence et en ivoire, ainsi que des scarabées égyptiens de la 11e dynastie.</p>
+  </section>
+
+  <section>
+    <h2>⚡ Mythe de Zeus</h2>
+    <p>La grotte Kronio, avec la grotte Dictéenne, est liée à la naissance de Zeus. Cronos avalait ses enfants pour empêcher la prophétie de sa chute.</p>
+    <p>Rhéa a caché Zeus dans la grotte Dictéenne (Psychro) pour le protéger de Cronos.</p>
+  </section>
+
+  <section>
+    <h2>ℹ️ Informations de Visite</h2>
+    <ul>
+      <li>🚶 Temps de montée : ~5 minutes</li>
+      <li>🪨 Chemin pavé en pente avec marches</li>
+      <li>👟 Chaussures adaptées recommandées</li>
+      <li>⚠️ Attention aux plafonds bas et aux surfaces glissantes</li>
+    </ul>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  © Σημείο Πληροφόρησης – Παρακαλούμε σεβαστείτε τον χώρο
+</footer>
+
+<script>
+  function setLang(lang, btn) {
+    document.querySelectorAll('[data-lang]').forEach(el => el.classList.remove('active'));
+    document.querySelector('[data-lang="' + lang + '"]').classList.add('active');
+
+    document.querySelectorAll('.lang button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    localStorage.setItem('lang', lang);
+  }
+
+  const saved = localStorage.getItem('lang');
+  if (saved) {
+    const btn = [...document.querySelectorAll('.lang button')].find(b => b.textContent.includes(saved.toUpperCase()));
+    if (btn) setLang(saved, btn);
+  }
+</script>
+
+</body>
+</html>
